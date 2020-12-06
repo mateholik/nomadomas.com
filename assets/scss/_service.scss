@@ -1,0 +1,57 @@
+.hero-simple {
+  background: #262722;
+  color: #fff;
+  .row {
+    @include center(space-between);
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
+    &__col {
+      width:100%;
+      &:first-of-type {
+        margin-right: 3rem;
+        @include breakpoint(mobile) {
+          order: 2;
+          margin-right: 0;
+        }
+      }
+      &:last-of-type {
+        width: min(50rem, 100%);
+        @include breakpoint(mobile) {
+          order: 1;
+          width: min(25rem, 100%);
+          margin: 0 auto;
+          margin-bottom: 3rem;
+        }
+      }
+      @include breakpoint(mobile) {
+        width: 100%;
+      }
+    }
+  }
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 6rem;
+    margin-bottom: 3rem;
+    @include breakpoint(mobile) {
+      font-size: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+    max-width: 40rem;
+    margin-bottom: 4rem;
+    @include breakpoint(mobile) {
+      font-size: 1.8rem;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+  }
+}
