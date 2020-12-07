@@ -1,10 +1,23 @@
 .contact-top {
   .row {
     display: flex;
+    @include breakpoint(mobile) {
+      display: block;
+    }
     &__col {
       width: 100%;
       &:not(:last-of-type) {
         margin-right: 3rem;
+      }
+      &:nth-child(2) {
+        .contact-links {
+          @include breakpoint(mobile) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      @include breakpoint(mobile) {
+        margin-bottom: 4rem;
       }
     }
   }

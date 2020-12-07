@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="dist/bundle.css">
 </head>
 
-<body class="contact">
+<body class="contact-page">
   <div id="loader" class="loader">
     <img src="assets/img/loader.gif" alt="loader">
   </div>
@@ -199,31 +199,43 @@
           </div>
         </div>
         <div class="row__col">
-          <div class="contact-links">
+          <!-- <div class="contact-links">
             <a target="_blank" href="https://g.page/WeWork-1-Mark-Square?share">
               <img class="tower" src="assets/img/icons/bigben.svg" alt="tower">
               WeWork Mark sq 1, London
             </a>
-          </div>
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3946236250194!2d-0.08452968422941198!3d51.524321479637834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cafe1b8e62b%3A0xc6126309d6e72628!2sWeWork%201%20Mark%20Sq%20-%20Coworking%20%26%20Office%20Space!5e0!3m2!1slt!2slt!4v1607265143524!5m2!1slt!2slt"
-              width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+          </div> -->
+          <div class="newsletter newsletter--small bg-red">
+            <h3>Naujienlaiškis</h3>
+            <img src="assets/img/newsletter.svg" alt="newsletter">
+            <form action="">
+              <input type="text" placeholder="El. paštas">
+              <input type="submit" value="Prenumeruoti">
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="black-img">
+  <section class="recommend bg-blue">
+    <div class="container">
+      <a target="_blank" href="https://paslaugos.lt/blogas/google-ads-adwords-reklama-paslaugos-lt-puslapiui">
+        Mus rekomenduoja
+        <img src="assets/img/paslaugos.svg" alt="paslaugos">
+      </a>
+    </div>
+  </section>
+
+  <section class="black-img">
     <div class="wrap">
       <img src="assets/img/footer-lt.jpg" alt="footer">
     </div>
-  </div>
-  <section id="contact" class="contact bg-green">
+  </section>
+
+  <section id="contact" class="contact">
     <div class="container">
-      <h2>SUSISIEKITE SU MUMIS</h2>
+      <!-- <h2>SUSISIEKITE SU MUMIS</h2> -->
       <form action="">
         <div class="input-wrap">
           <input type="text" required />
@@ -246,36 +258,7 @@
     </div>
   </section>
 
-  <section class="newsletter bg-red">
-    <div class="container">
-      <div class="row">
-        <div class="row__col left">
-          <img src="assets/img/newsletter.svg" alt="newsletter">
-        </div>
-        <div class="row__col">
-          <h2>NAUJIENLAIŠKIS</h2>
-          <div class="right">
-            <p>Su savo klientais ir naujienlaiškio prenumeratoriais dalinamės naudingais patarimais, triukais,
-              eksperimentais ir gerosiomis patirtimis.</p>
-            <form action="">
-              <input type="text" placeholder="El. paštas">
-              <input type="submit" value="Prenumeruoti">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer>
-    <div class="recommend">
-      <div class="container">
-        <a target="_blank" href="https://paslaugos.lt/blogas/google-ads-adwords-reklama-paslaugos-lt-puslapiui">
-          Mus rekomenduoja
-          <img src="assets/img/paslaugos.svg" alt="paslaugos">
-        </a>
-      </div>
-    </div>
     <div class="top">
       <div class="container">
         <div class="row">
@@ -306,7 +289,7 @@
         </div>
       </div>
     </div>
-    <div class="bottom bg-red">
+    <div class="bottom">
       <div class="container">
         <div class="wrap">
           <p>© 2020 NomADomas. All rights reserved.
@@ -326,6 +309,7 @@
       </div>
     </div>
   </footer>
+
 
 
   <script src="dist/bundle.js"></script>

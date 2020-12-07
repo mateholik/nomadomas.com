@@ -137,26 +137,3 @@ button, input, select, textarea {
     width: 16rem;
   }
 }
-
-.contact-links {
-  a {
-    @include center;
-    margin-bottom: 1rem;
-    img {
-      width: 2rem;
-      margin-right: 1rem;
-    }
-  }
-}
-
-.black-img {
-  background: #262722;
-  padding: 4rem 0;
-  @include breakpoint(mobile) {
-    padding: 2rem 0;
-  }
-  .wrap {
-    max-width: 60rem;
-    margin: 0 auto;
-  }
-}

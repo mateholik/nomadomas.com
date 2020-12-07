@@ -113,7 +113,6 @@ section {
       background: rgba($green, 0.03);
       @include breakpoint(mobile) {
         box-shadow: none;
-        display: flex;
         padding: 0.5rem;
         background: #fff;
       }
@@ -128,43 +127,28 @@ section {
         }
       }
     }
-    .left {
-      @include breakpoint(mobile) {
-        order: 2;
-        width: 100%;
-      }
-    }
     &__title {
       color: $green;
       font-size: 2.2rem;
       text-align: center;
       @include breakpoint(mobile) {
-        font-size: 1.8rem;
-        text-align: left;
+        font-size: 2rem;
         font-weight: 700;
       }
-    }
-    &__img {
+    }&__img {
       height: 20rem;
-      width: auto;
+      width: 100%;
       margin: 2rem auto;
       @include breakpoint(mobile) {
-        width: 8rem;
-        margin: 0;
-        margin-right: 1rem;
-        height: auto;
-        order: 1;
+        height: 14rem;
       }
       img {
         height: 100%;
         width: auto;
         margin: 0 auto;
-        @include breakpoint(mobile) {
-          width: 100%;
-          height: auto;
-        }
       }
     }
+    
     &__content {
       position: absolute;
       top: 0;
@@ -196,7 +180,6 @@ section {
         margin-bottom: 2rem;
         @include breakpoint(mobile) {
           color: #222;
-          text-align: left;
           font-size: 1.6rem;
           margin-bottom: 0;
         }
@@ -219,55 +202,6 @@ section {
           background: darken($green, 5%);
         }
       }
-    }
-  }
-}
-.newsletter {
-  h2 {
-    text-align: left;
-  }
-  .row {
-    display: flex;
-    @include breakpoint(mobile) {
-      flex-direction: column;
-    }
-    &__col {
-      width: 100%;
-      &:first-of-type {
-        width: min(32rem, 100%);
-        margin-right: 10rem;
-        @include breakpoint(mobile) {
-          width: min(22rem, 100%);
-        }
-        @include breakpoint(mobile) {
-          margin: 0 auto;
-          margin-bottom: 3rem;
-        }
-      }
-      &:last-of-type {
-        width: min(60rem, 100%);
-      }
-    }
-  }
-  p {
-    margin-bottom: 2rem;
-  }
-  form {
-    display: flex;
-    input[type=text] {
-      border: 0.2rem solid $red;
-      width: 100%;
-      padding: 1rem;
-    }
-    ::placeholder {
-      color: $red;
-    }
-    input[type=submit] {
-      background: $red;
-      color: #fff;
-      font-weight: 700;
-      padding: 1rem;
-      cursor: pointer;
     }
   }
 }
@@ -350,63 +284,6 @@ section {
       &:hover {
         transform: scale(1.1);
       }
-    }
-  }
-}
-.contact {
-  form {
-    width: min(50rem, 100%);
-    margin: 0 auto;
-  }
-  .input-wrap {
-    position: relative;
-    margin-bottom: 3rem;
-    input, textarea {
-      width: 100%;
-      border-bottom: 0.1rem solid $green;
-      transition: all $speed $style;
-      box-sizing: border-box;
-      padding: 0.5rem 0;
-      &:focus, &:not(:focus):valid {
-        box-shadow: 0 0.1rem $green;
-      }
-    }
-    .floating-label {
-      position: absolute;
-      pointer-events: none;
-      left: 0;
-      top: 0;
-      color: #aaaaaa;
-      transition: all $speed $style;
-    }
-    input:focus ~ .floating-label,
-    input:not(:focus):valid ~ .floating-label,
-    textarea:focus ~ .floating-label,
-    textarea:not(:focus):valid ~ .floating-label {
-      top: -1.2rem;
-      font-size: 1rem;
-      color: #1c1b19;
-      opacity: 1;
-      &:after {
-        height: 0.2rem;
-      }
-    }
-    textarea {
-      min-height: 10rem;
-    }
-  }
-  input[type=submit] {
-    display: block;
-    background: $yellow;
-    color: #fff;
-    font-weight: 700;
-    padding: 1rem;
-    cursor: pointer;
-    width: 20rem;
-    margin: 0 auto;
-    transition: all $speed $style;
-    &:hover {
-      background: darken($yellow, 5%)
     }
   }
 }

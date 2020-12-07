@@ -7,7 +7,9 @@ import '../scss/style.scss'
 
 window.addEventListener('load', () => {
 
-  document.getElementById('loader').style.display = 'none';
+  if (!document.body.classList.contains('service')) {
+    document.getElementById('loader').style.display = 'none';
+  }
 
   mobNav()
 

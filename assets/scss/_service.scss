@@ -62,20 +62,71 @@
   }
   .wrap {
     display: flex;
-    .content {
+    @include breakpoint(mobile) {
+      display: block;
+    }
+    main {
       width: 100%;
       margin-right: 6rem;
-      text-align: justify;
+      .content {
+        &__text {
+          text-align: justify;
+          margin-bottom: 4rem;
+        }
+        .row {
+          display: flex;
+          margin-bottom: 4rem;
+          @include breakpoint(mobile) {
+            display: block;
+          }
+          &__col {
+            width: 50%;
+            @include breakpoint(mobile) {
+              width: 100%;
+            }
+          }
+          .item {
+            margin-right: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            @include center;
+            &:hover {
+              img {
+                transform: scale(1.2);
+              }
+            }
+            img {
+              width: 1.5rem;
+              margin-right: 1.5rem;
+              transition: $speed $style;
+            }
+          }
+        }
+        &__examples {
+          .flex-wrap {
+            margin: -0.5rem;
+            margin-top: 1rem;
+          }
+          .item {
+            width: 33.33%;
+            padding: 0.5rem;
+          }
+        }
+      }
     }
     .sidebar {
+      display: block;
       width: min(38rem, 100%);
+      @include breakpoint(mobile) {
+       margin-top: 4rem;
+      }
       h4 {
         font-size:2.4rem;
         font-weight: 700;
         margin-bottom: 2rem;
       }
       a {
-        display: flex;
+        @include center;
         font-weight: 500;
         margin-bottom: 1.5rem;
         padding-bottom: 1.5rem;
@@ -90,6 +141,7 @@
         img {
           transition: 0.4s $style;
           width: 1rem;
+          height: 1rem;
           margin-right: 1rem;
         }
       }
