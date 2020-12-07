@@ -90,11 +90,11 @@ section {
     margin-bottom: 4rem;
   }
   .flex-wrap {
-    margin: -2rem;
+    margin: -3rem;
   }
   .item {
     width: 33.33%;
-    padding: 2rem;
+    padding: 3rem;
     @include breakpoint(mobile) {
       max-width: 60rem;
       width: 100%;
@@ -112,6 +112,7 @@ section {
       transition: all $speed $style;
       background: rgba($green, 0.03);
       @include breakpoint(mobile) {
+        box-shadow: none;
         display: flex;
         padding: 0.5rem;
         background: #fff;
@@ -121,6 +122,9 @@ section {
         .#{$className}__content {
           transform: translateY(0);
           opacity: 1;
+        }
+        @include breakpoint(mobile) {
+          box-shadow: none;
         }
       }
     }
@@ -145,7 +149,7 @@ section {
       width: auto;
       margin: 2rem auto;
       @include breakpoint(mobile) {
-        width: 6rem;
+        width: 8rem;
         margin: 0;
         margin-right: 1rem;
         height: auto;

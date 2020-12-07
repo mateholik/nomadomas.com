@@ -82,17 +82,21 @@ function mobNav() {
 
     const header = document.querySelector('header .wrap')
     const logo = document.querySelector('header .wrap .logo')
-    const submenu = document.querySelector('header .submenu')
+    const submenus = document.querySelectorAll('header .submenu')
 
     window.addEventListener('scroll', function () {
       if (window.scrollY >= heroHeight) {
         header.classList.add('shrink')
         logo.classList.add('shrink')
-        submenu.style.top = '8rem'
+        submenus.forEach(el => {
+          el.style.top = '8rem'
+        })
       } else {
         header.classList.remove('shrink')
         logo.classList.remove('shrink')
-        submenu.style.top = '10rem'
+        submenus.forEach(el => {
+          el.style.top = '10rem'
+        })
       }
     })
   }

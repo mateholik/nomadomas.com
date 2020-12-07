@@ -1,18 +1,34 @@
 footer {
-  .img {
-    background: #262722;
-    padding: 4rem 0;
-    @include breakpoint(mobile) {
-      padding: 2rem 0;
+  background: #000;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  .contact-links {
+    a {
+      margin-bottom: 1.5rem;
     }
-    .wrap {
-      max-width: 60rem;
-      margin: 0 auto;
+  }
+  .recommend {
+    background: #0063cc;
+    padding: 1rem 0;
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: 500;
+      img {
+        width: 18rem;
+        margin-top: 1rem;
+        @include breakpoint(mobile) {
+          width: 14rem;
+        }
+      }
     }
   }
   .top {
     padding: 4rem 0;
-    border-top: 0.1rem solid grey;
+    // border-top: 0.1rem solid grey;
     border-bottom: 0.1rem solid grey;
     @include breakpoint(mobile) {
       padding-top: 0;
@@ -48,14 +64,6 @@ footer {
         }
       }
     }
-    a {
-      @include center;
-    margin-bottom: 1rem;
-      img {
-        width: 2rem;
-        margin-right: 1rem;
-      }
-    }
   }
   .bottom {
     padding: 2rem 0;
@@ -64,14 +72,12 @@ footer {
       p {
         margin-right: 2rem;
       }
-      .icons {
-        @include center
-      }
-      a {
-        img {
-          width:2rem;
-          margin-right: 1rem;
-        }
+    }
+    .icons-social {
+      @include center;
+      img {
+        width: 2rem;
+        margin-right: 1rem;
       }
     }
   }

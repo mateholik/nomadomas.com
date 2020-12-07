@@ -35,7 +35,7 @@ button, input, select, textarea {
 
 
 .container {
-  max-width: 1024px;
+  max-width: 1124px;
   width: 100%;
   margin: 0 auto;
   padding: 0 2rem;
@@ -135,5 +135,28 @@ button, input, select, textarea {
     margin: 0 auto;
     height: 4rem;
     width: 16rem;
+  }
+}
+
+.contact-links {
+  a {
+    @include center;
+    margin-bottom: 1rem;
+    img {
+      width: 2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.black-img {
+  background: #262722;
+  padding: 4rem 0;
+  @include breakpoint(mobile) {
+    padding: 2rem 0;
+  }
+  .wrap {
+    max-width: 60rem;
+    margin: 0 auto;
   }
 }

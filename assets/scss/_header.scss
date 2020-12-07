@@ -134,6 +134,7 @@ header {
           left: 0;
           display: block;
           min-width: 20rem;
+          width: auto;
           height: auto;
           transition: $speed $style;
           li {

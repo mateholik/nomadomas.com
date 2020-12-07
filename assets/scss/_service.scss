@@ -55,3 +55,44 @@
     }
   }
 }
+.description {
+  h2 {
+    text-align-last: left;
+    margin-bottom: 4rem;
+  }
+  .wrap {
+    display: flex;
+    .content {
+      width: 100%;
+      margin-right: 6rem;
+      text-align: justify;
+    }
+    .sidebar {
+      width: min(38rem, 100%);
+      h4 {
+        font-size:2.4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+      a {
+        display: flex;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 0.1rem solid #888;
+        transition: 0.4s $style;
+        &:hover {
+          border-bottom: 0.1rem solid green;
+         img {
+          transform: rotate(360deg);
+         }
+        }
+        img {
+          transition: 0.4s $style;
+          width: 1rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
